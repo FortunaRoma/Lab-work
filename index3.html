@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        #menu-btn {
+            display: none; /* Начально скрыть кнопку меню */
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #menu {
+            display: none; /* Начально скрыть меню */
+            position: fixed;
+            top: 50px;
+            left: 10px;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            border: none;
+        }
+
+        #photo {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="baner">
+        <img src="файл с фото роми=" alt="фото роми">
+        <h1>лабораторна там человека</h1>
+    </div>
+    <div id="golovna1">
+        <button id="menu-btn">Меню</button>
+        <div id="menu">
+        <!-- Содержимое вашего меню -->
+            <ul>
+                <li><a href="index1.html">лабораторна 1</a></li>
+                <li><a href="index2.html">лабораторна 2</a></li>
+                <li><a href="index3.html">лабораторна 3</a></li>
+            </ul>
+        </div>
+        <img src="your-photo.jpg" alt="Фото" id="photo">
+
+        <script>
+            // Получаем элементы по их идентификаторам
+            var menuBtn = document.getElementById("menu-btn");
+            var menu = document.getElementById("menu");
+            var photo = document.getElementById("photo");
+
+            // При клике на фото, показываем или скрываем меню
+            photo.addEventListener("click", function() {
+                if (menu.style.display === "block") {
+                    menu.style.display = "none";
+                } else {
+                    menu.style.display = "block";
+                }
+            });
+
+            // При клике на кнопку меню, показываем или скрываем меню
+            menuBtn.addEventListener("click", function() {
+                if (menu.style.display === "block") {
+                    menu.style.display = "none";
+                } else {
+                    menu.style.display = "block";
+                }
+            });
+        </script>
+    </div>
+    <div id="golovna2">
+        //там информация про тебя через вписание а р или h но ето заголовок 
+        //тут я просто использовал в нуглую скопировал с чат джпт ибо аж такие кодь я не осилю 
+    </div>
+</body>
+</html>
