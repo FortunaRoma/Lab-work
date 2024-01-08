@@ -1,46 +1,166 @@
 body {
-    margin: -5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("beautiful gray pattern for the background in a min.jpg");
+    background-size: cover; 
+    background-position: center;
+    
 }
-#baner {
-    width: 100%;
-    height: 200px;
-    background-color: aqua;
-    color: black;
-    float: left;
+h1 {
     text-align: center;
 }
-#golovna1 {
-    width: 50%;
-    height: 500px;
-    background-color: aquamarine;
-    color: black;
-    float: left;
-    text-align: center;
+h1 aside {
+    text-align: left;
 }
-#golovna2 {
-    width: 50%;
-    height: 500px;
-    background-color: cornsilk;
-    color: black;
-    float: left;
-    text-align: center;
+
+header { 
+    flex: 1;
+    height: 100px;
+    background-color: rgba(217, 217, 215, 0.5);
+    color: black;    
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 10px;
+    border: 2px solid #3E4651;
+    border-radius: 10px; 
 }
 img {
-    width: 200px;
-    height: 200px;
-    float: right;
+    border: 4px solid #3E4651; 
+    border-radius: 10px; 
+    margin: 10px;
 }
-@media screen and (max-width: 600px) {
-    /* Стили для устройств с шириной экрана до 600px */
+#banner_img {
+    max-width: auto;
+    max-height: 75px;    
+}
+#Roma_img {  
+    max-width: 50%;
+    height: auto;
+    min-height: 100px;
+    margin: 5% 0 0 25%;
+}
+
+.container {
+    display: flex;
+}
+
+aside {
+    flex: 0 0 15%; 
+    height: auto;
+    background-color: rgba(217, 217, 215, 0.5);
+    color: black;
+    margin: 10px;      
+    border: 2px solid #3E4651;
+    border-radius: 10px;     
+}
+aside li {
+    list-style-type: none; 
+    margin-bottom: 20px; 
+}
+
+aside li a {
+    text-decoration: none; 
+    color: #333; 
+    font-weight: normal; 
+    transition: color 0.3s ease; 
+    display: block;
+}
+
+
+aside li a:hover {
+    color: #fff; 
+    font-weight: bold; 
+}
+
+main {
+    flex: 1; 
+    height: auto;
+    background-color: rgba(217, 217, 215, 0.5);
+    color: black;
+    border: 2px solid #3E4651;
+    border-radius: 10px;
+    margin: 10px; 
+    padding: 25px;
+    padding-top: 0px;
+}
+p {    
+    text-align: justify;
+    margin-bottom: -15px;
+}
+
+#p_span {
+    transition: color 1.3s ease, font-size 1.8s ease;;
+    font-style: italic;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+#p_span:hover {
+    color: #fff; 
+    font-size: 1.3em;
+}
+
+
+@media screen and (max-width: 800px) {    
     body {
         font-size: 14px;
     }
-}
-
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-    /* Стили для устройств с шириной экрана от 601px до 1024px */
-    body {
-        font-size: 16px;
+    .container {
+        flex-direction: column-reverse;
     }
+    
+    main {
+        flex: 1;
+        
+    }
+    
+    aside {
+        flex: 0 0 100%;
+        background-color: rgba(217, 217, 215, 0);
+        border: none;
+        
+    }
+    aside ol {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+
+
+        
+    }
+    aside ol li:not([class]) {
+        display: none;
+    }
+    aside h1:not([class]) {
+        display: none;
+    } 
+    aside li a {         
+        color: #ffffff;         
+    }      
+    aside li a:hover {
+        color: #000000; 
+    }       
+    .Next, .Previous {                
+        height: 50px;
+        border: 2px solid #ffffff; 
+        border-radius: 25px; 
+        margin: 10px;
+        background-color: rgba(0, 0, 0, 0.5); 
+        color: #ffffff; 
+        text-align: center; 
+        line-height: 40px; 
+        display: inline-block;
+        transition: color 0.3s ease;   
+    }
+    .Next {
+        flex: 1;
+        order: 1;
+    }
+
+    .Previous {
+        flex: 1;
+        order: -1; 
+    }
+    .Next:hover, .Previous:hover {
+        background-color: rgba(255, 255, 255, 0.2); 
+    }
+    
 }

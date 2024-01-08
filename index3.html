@@ -1,84 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="EN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Персональний Web-сайт студента. ЧНУ</title>
     <link rel="stylesheet" href="style1.css">
-    <style>
-        #menu-btn {
-            display: none; /* Начально скрыть кнопку меню */
-            position: fixed;
-            top: 10px;
-            left: 10px;
-            background-color: #3498db;
-            color: #fff;
-            padding: 10px;
-            border: none;
-            cursor: pointer;
-        }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        #menu {
-            display: none; /* Начально скрыть меню */
-            position: fixed;
-            top: 50px;
-            left: 10px;
-            background-color: #3498db;
-            color: #fff;
-            padding: 10px;
-            border: none;
-        }
-
-        #photo {
-            cursor: pointer;
-        }
-    </style>
 </head>
 <body>
-    <div id="baner">
-        <img src="файл с фото роми=" alt="фото роми">
-        <h1>лабораторна там человека</h1>
-    </div>
-    <div id="golovna1">
-        <button id="menu-btn">Меню</button>
-        <div id="menu">
-        <!-- Содержимое вашего меню -->
-            <ul>
-                <li><a href="index1.html">лабораторна 1</a></li>
-                <li><a href="index2.html">лабораторна 2</a></li>
-                <li><a href="index3.html">лабораторна 3</a></li>
-            </ul>
-        </div>
-        <img src="your-photo.jpg" alt="Фото" id="photo">
+    <header>
+        <img id="banner_img" src="Student's personal website icon.jpg" alt="Іконка банера">
+        <h1>Персональний Web-сайт студента </h1>
+        <img id="banner_img" src="Student's personal website icon.jpg" alt="Іконка банера">
+    </header>
+    <div class="container">
+        <aside>
+            <h1>Меню:</h1>
+            <ol>
+                <li><a href="index1.html">Головна&nbsp;сторінка</a></li>
+                <li class="Previous"><a href="index2.html">Про творця</a></li>
+                <li><a href="index3.html">ЧНУ</a></li>
+                <li class="Next"><a href="index4.html">Професія</a></li>
+                <li><a href="index5.html">Група АКІТ</a></li>
+                <li><a href="index6.html">Контакти</a></li>
+            </ol>            
+        </aside>
+        <main>
+            <h1>Черкаський національний університет ім. Богдана Хмельницького</h1>
+            <p>&nbsp;&nbsp;&nbsp;Черкаський національний університет ім. Богдана Хмельницького — це визнана освітня установа, що пропонує високий рівень навчання та розширені можливості для студентів. Заснований в 1945 році, університет став важливим центром освіти в регіоні та здобув увагу студентів з усієї України.</p>
+            <p>&nbsp;&nbsp;&nbsp;Навчальний заклад спеціалізується в різних галузях знань, надаючи можливість отримати вищу освіту в таких областях, як гуманітарні науки, природничі науки, соціальні та технічні науки. Наукові досягнення та педагогічний досвід викладачів роблять університет привабливим для тих, хто прагне вдосконалити свої навички та отримати якісну освіту.</p>                
+            <p>&nbsp;&nbsp;&nbsp;Університет володіє сучасною інфраструктурою та обладнанням для наукових досліджень, а також забезпечує студентам доступ до бібліотек, лабораторій та інших ресурсів, що сприяють успішному навчанню. Крім того, студентам надається можливість брати участь у різноманітних культурних та спортивних заходах, розвиваючи не лише академічні, але й творчі та фізичні аспекти особистості.</p>                
+            <p>&nbsp;&nbsp;&nbsp;Черкаський національний університет ім. Богдана Хмельницького є місцем, де формується майбутнє покоління лідерів, вчених та професіоналів. Тут студенти отримують всебічну підготовку та навчаються працювати в різних сферах, готуючись до викликів сучасного світу.</p>
+        </main>
+        
 
-        <script>
-            // Получаем элементы по их идентификаторам
-            var menuBtn = document.getElementById("menu-btn");
-            var menu = document.getElementById("menu");
-            var photo = document.getElementById("photo");
-
-            // При клике на фото, показываем или скрываем меню
-            photo.addEventListener("click", function() {
-                if (menu.style.display === "block") {
-                    menu.style.display = "none";
-                } else {
-                    menu.style.display = "block";
-                }
-            });
-
-            // При клике на кнопку меню, показываем или скрываем меню
-            menuBtn.addEventListener("click", function() {
-                if (menu.style.display === "block") {
-                    menu.style.display = "none";
-                } else {
-                    menu.style.display = "block";
-                }
-            });
-        </script>
-    </div>
-    <div id="golovna2">
-        //там информация про тебя через вписание а р или h но ето заголовок 
-        //тут я просто использовал в нуглую скопировал с чат джпт ибо аж такие кодь я не осилю 
     </div>
 </body>
 </html>
